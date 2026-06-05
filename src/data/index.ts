@@ -9,7 +9,7 @@ export const profile = {
   email: "faisal.nugraha.c@gmail.com",
   phone: "+62 821-1683-7950",
   linkedin: "https://linkedin.com/in/faisal-nugraha-cayunda-7b459324b",
-  github: "https://github.com/your-handle", // placeholder — ganti dengan handle asli
+  github: "https://github.com/faisalcayunda",
   resumePdf: "/resume.pdf",
   valueProp:
     "I build the backends and data pipelines behind Indonesian government data platforms: the APIs that move data between agencies, the auth that locks it down, the parts nobody sees. Seven years of it, mostly in Go and Python.",
@@ -172,12 +172,28 @@ export const projects: Project[] = [
     note: "Government platform · internal",
   },
   {
+    name: "Pesona Hub Digi",
+    blurb:
+      "A digital data-hub platform built as a feature-sliced FastAPI monolith: clean module boundaries, dependency injection, and object storage, with a Nuxt/Vue front end on top.",
+    role: "Backend · architecture",
+    stack: ["Python", "FastAPI", "SQLModel", "MySQL", "Redis", "MinIO", "Nuxt"],
+    note: "Data-hub platform",
+  },
+  {
     name: "Satu Data Jabar & Open Data Jabar",
     blurb:
       "West Java's two public open-data platforms, both running on one shared interoperability contract.",
     role: "Backend",
     stack: ["Python", "Flask", "MeiliSearch", "PostgreSQL", "Nginx"],
     note: "Public government platform",
+  },
+  {
+    name: "Cirebon Open-Data Portal",
+    blurb:
+      "The public front end for a city's open-data portal: interactive data visualizations, animated sections, and server-state caching, built on Next.js and React.",
+    role: "Frontend",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind", "TanStack Query"],
+    note: "Public government portal",
   },
   {
     name: "Regional Open-Data Portals",
@@ -218,6 +234,14 @@ export const projects: Project[] = [
     role: "Backend · solo",
     stack: ["Python", "python-telegram-bot", "SQLite", "httpx"],
     note: "Internal tool",
+  },
+  {
+    name: "Email Scheduling Service",
+    blurb:
+      "A background job service that queues and sends emails at scheduled times: Celery workers behind a Redis broker, with Flask and Postgres for the API and state.",
+    role: "Backend · solo",
+    stack: ["Python", "Flask", "Celery", "Redis", "PostgreSQL", "Docker"],
+    note: "Personal project",
   },
   {
     name: "Sapta Job Portal",
