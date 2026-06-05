@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+*.log
+
+# dependencies / build output
+/node_modules
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# env / deploy / secrets
+.env*
+.vercel
+*.pem
+
+# Claude Code session data
+/.claude/
+
+# generated verification screenshots
+shot-*.png
+cyn-*.png
+clone-*.png
+anim-*.png
+diag-*.png
+proj-*.png
+root-*.png
+resume-preview.png
+
+# scraped reference material (not ours)
+/ref/
+
+# private / heavy source assets (PII or not needed in repo)
+Faisal Nugraha Cayunda, S.Kom. - CV.docx.pdf
+Faisal's resume.pdf
+Faisal-Nugraha-Cayunda-CV-merged.md
+foto formal.png
