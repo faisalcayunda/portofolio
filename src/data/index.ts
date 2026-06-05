@@ -70,7 +70,7 @@ export type Job = {
 export const experience: Job[] = [
   {
     company: "IDEAS Data Ecosystem",
-    title: "Lead Backend Engineer",
+    title: "System Architect",
     period: "Jan 2026 — Present",
     location: "Jakarta · Hybrid",
     bullets: [
