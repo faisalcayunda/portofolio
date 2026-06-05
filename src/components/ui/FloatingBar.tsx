@@ -5,7 +5,7 @@ import { profile } from "@/data";
 
 export default function FloatingBar() {
   return (
-    <>
+    <aside className="float-actions" aria-label="Quick actions">
       <div className="floatbar">
         <span className="dotpulse" aria-hidden />
         Open to opportunities
@@ -21,6 +21,6 @@ export default function FloatingBar() {
       >
         <ArrowUp size={18} />
       </button>
-    </>
+    </aside>
   );
 }
