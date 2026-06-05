@@ -5,14 +5,14 @@
 <title>Faisal Nugraha Cayunda - Resume</title>
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap");
-  @page { size: A4; margin: 14mm 16mm; }
+  @page { size: A4; margin: 12mm 15mm; }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
     font-family: "Inter", Arial, sans-serif;
     color: #2f2f33;
     font-size: 10.3pt;
-    line-height: 1.5;
+    line-height: 1.4;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -31,24 +31,25 @@
   h2 {
     font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700;
     font-size: 10pt; text-transform: uppercase; letter-spacing: 1.4px;
-    color: #14141a; margin: 18px 0 10px; padding-bottom: 5px;
+    color: #14141a; margin: 13px 0 7px; padding-bottom: 5px;
     border-bottom: 1.5px solid #14141a;
   }
-  p.summary { margin: 12px 0 0; }
+  p.summary { margin: 9px 0 0; }
 
   /* experience */
-  .job { margin: 0 0 12px; page-break-inside: avoid; }
+  .job { margin: 0 0 8px; page-break-inside: avoid; }
   .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
   .company { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 10.6pt; color: #14141a; }
   .dates { color: #6c6c72; font-size: 9.2pt; white-space: nowrap; }
   .role { color: #f04438; font-weight: 600; font-size: 9.8pt; margin: 1px 0 5px; }
   ul { margin: 0; padding-left: 16px; }
-  li { margin: 0 0 3px; }
+  li { margin: 0 0 2px; }
 
   /* skills / projects / education */
   .skills p { margin: 4px 0; }
   .skills strong, .projects strong, .edu strong { color: #14141a; }
-  .projects ul li { margin-bottom: 4px; }
+  .projects ul { columns: 2; column-gap: 22px; }
+  .projects ul li { margin-bottom: 5px; break-inside: avoid; -webkit-column-break-inside: avoid; }
   .edu .line { display: flex; justify-content: space-between; gap: 12px; }
   .note { font-size: 8.8pt; color: #8a8a90; font-style: italic; margin: 8px 0 0; }
 </style>
@@ -141,13 +142,22 @@
   <h2>Projects</h2>
   <div class="projects">
     <ul>
-      <li><strong>DataHub</strong> — national government data platform built as microservices, with a documented REST API other agencies integrate against. Go, Python, LDAP/AD.</li>
-      <li><strong>One-Map Geospatial Platform</strong> — PostGIS mapset API with on-the-fly choropleths and classification-based access control. Python, FastAPI, PostGIS.</li>
-      <li><strong>Pesona Hub Digi</strong> — digital data-hub platform built as a feature-sliced FastAPI monolith with object storage and a Nuxt/Vue front end. FastAPI, SQLModel, MySQL, Redis, MinIO.</li>
-      <li><strong>Satu Data Jabar / Open Data Jabar</strong> — province-wide public dataset platforms on one shared interoperability contract. Python, Flask, MeiliSearch.</li>
-      <li><strong>Cirebon Open-Data Portal</strong> — public front end for a city open-data portal with interactive visualizations and server-state caching. Next.js, React, TypeScript.</li>
-      <li><strong>Modular ERP</strong> — ERP whose feature modules load at runtime, no redeploy. FastAPI + React.</li>
-      <li><strong>Reporting Telegram Bot</strong> — turns Google Sheets into on-demand reports; async, retries, SQLite state.</li>
+      <li><strong>DataHub</strong> — national data platform as microservices; REST APIs, LDAP auth, and encryption other agencies build on. Go, Python.</li>
+      <li><strong>Master Data Service</strong> — master-data read API rewritten Rust&rarr;Go; clean read/write split, hardened auth. Go, chi, PostgreSQL.</li>
+      <li><strong>One-Map Geospatial Platform</strong> — PostGIS mapset API with on-the-fly choropleths and classification-based access. Python, FastAPI, PostGIS.</li>
+      <li><strong>Column &amp; Row-Level Security</strong> — per-consumer column/row access with type-correct masking. Trino, SQL.</li>
+      <li><strong>City &amp; District Data Portal</strong> — district/city open-data backend; search, caching, object storage. Python, FastAPI, Redis, S3.</li>
+      <li><strong>Pesona Hub Digi</strong> — feature-sliced FastAPI data-hub monolith with a Nuxt/Vue front end. FastAPI, SQLModel, MySQL, MinIO.</li>
+      <li><strong>Satu Data Jabar / Open Data Jabar</strong> — two public open-data platforms on one interoperability contract. Python, Flask, MeiliSearch.</li>
+      <li><strong>Cirebon Open-Data Portal</strong> — public portal front end with interactive data visualizations. Next.js, React, TypeScript.</li>
+      <li><strong>Regional Open-Data Portals</strong> — one modular backend reused across regions; a new region is mostly config. Python, FastAPI, MinIO.</li>
+      <li><strong>Data Sync Pipeline</strong> — Airflow pipeline syncing master records; idempotent runs, staged loads. Airflow, Python, PostgreSQL.</li>
+      <li><strong>Executive Dashboard</strong> — live read on regional budget, tax, and the metrics decision-makers ask for. Python, Flask, PostgreSQL.</li>
+      <li><strong>Modular ERP</strong> — ERP whose feature modules load at runtime, no redeploy. FastAPI, React.</li>
+      <li><strong>Reporting Telegram Bot</strong> — Google Sheets into on-demand reports in Telegram; async, retries. Python, SQLite, httpx.</li>
+      <li><strong>Email Scheduling Service</strong> — background job service that queues and sends scheduled emails. Flask, Celery, Redis.</li>
+      <li><strong>Sapta Job Portal</strong> — internal LinkedIn-style job board. React, Express.js.</li>
+      <li><strong>SIPS Forestry System</strong> — consolidates forestry data with analytics for sustainable management. Web, analytics.</li>
     </ul>
   </div>
 

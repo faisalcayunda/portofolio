@@ -10,7 +10,7 @@ export const profile = {
   phone: "+62 821-1683-7950",
   linkedin: "https://linkedin.com/in/faisal-nugraha-cayunda-7b459324b",
   github: "https://github.com/faisalcayunda",
-  resumePdf: "/resume.pdf",
+  resumePdf: "/resume.pdf?v=3", // bump when resume.pdf is regenerated to bust browser cache
   valueProp:
     "I build the backends and data pipelines behind Indonesian government data platforms: the APIs that move data between agencies, the auth that locks it down, the parts nobody sees. Seven years of it, mostly in Go and Python.",
 } as const;

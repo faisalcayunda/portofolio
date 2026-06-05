@@ -7,7 +7,7 @@ export default function FloatingBar() {
   return (
     <aside className="float-actions" aria-label="Quick actions">
       <div className="floatbar">
-        <span className="dotpulse" aria-hidden />
+        <span className="dotpulse" aria-hidden />{" "}
         Open to opportunities
         <a className="fb-cta" href={`mailto:${profile.email}`}>
           Let&apos;s talk
